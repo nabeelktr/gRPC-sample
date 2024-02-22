@@ -3,7 +3,8 @@
   "scripts": {
     "start-degree": "node ./degree-ms/main.js",
     "start-processor": "node ./process-ms/main.js",
-    "start": "concurrently 'npm run start-degree' 'npm run start-processor'"
+    "start-main": "node ./main-ms/main.js",
+    "start": "concurrently 'npm run start-degree' 'npm run start-processor' 'npm run start-main'"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.10.1",
